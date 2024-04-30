@@ -20,7 +20,7 @@
 
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-ddefine( 'DB_NAME', 'WP_DB_NAME');
+define( 'DB_NAME', 'WP_DB_NAME');
 
 /** MySQL database username */
 define( 'DB_USER', 'WP_DB_USER');
