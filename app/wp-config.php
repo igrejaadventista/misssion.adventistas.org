@@ -20,22 +20,32 @@
 
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'sva' );
+ddefine( 'DB_NAME', 'WP_DB_NAME');
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'WP_DB_USER');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'WP_DB_PASSWORD');
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'WP_DB_HOST');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
+define( 'DISALLOW_FILE_EDIT', true );
+
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'aws',
+    'access-key-id' => 'AWS_S3_ACCESS_KEY',
+    'secret-access-key' => 'AWS_S3_SECRET_KEY',
+	'bucket' => 'WP_S3_BUCKET'
+) ) );
+
 
 /**#@+
  * Chaves únicas de autenticação e salts.
