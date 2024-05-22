@@ -41,11 +41,15 @@ define( 'DISALLOW_FILE_EDIT', true );
 
 define( 'AS3CF_SETTINGS', serialize( array(
     'provider' => 'aws',
+    'region' => 'us-east-1',
     'access-key-id' => 'AWS_S3_ACCESS_KEY',
     'secret-access-key' => 'AWS_S3_SECRET_KEY',
-	'bucket' => 'WP_S3_BUCKET'
+	'bucket' => 'WP_S3_BUCKET',
+    'enable-delivery-domain' => true,
+	'delivery-domain' => 'files.adventistas.org',
+    'force-https' => true,
+	'remove-local-file' => true,
 ) ) );
-
 
 /**#@+
  * Chaves únicas de autenticação e salts.
