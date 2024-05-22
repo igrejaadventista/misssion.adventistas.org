@@ -47,6 +47,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 	'bucket' => 'WP_S3_BUCKET',
     'enable-delivery-domain' => true,
 	'delivery-domain' => 'files.adventistas.org',
+    'signed-urls-object-prefix' => 'mission.adventistas.org',
     'force-https' => true,
 	'remove-local-file' => true,
 ) ) );
